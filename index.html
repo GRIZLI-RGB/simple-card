@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="card">
+            <div class="card__top">
+                <img class="card__top-image" src="./img/jumper-1.jpg" alt="Jumper" />
+                <div class="card__top-hover">
+                    <div class="card__top-hover-up">
+                        <div class="card__top-hover-up-request">Запрос о поступлении товара</div>
+                        <button class="card__top-hover-up-button"></button>
+                    </div>
+                    <div class="card__top-hover-down">
+                        <h6 class="card__top-hover-down-title">
+                            Оставить запрос <br />
+                            о поступлении товара
+                        </h6>
+                        <p class="card__top-hover-down-opinion">
+                            Оставьте свои данные и мы сообщим когда товар прибудет в наш магазин
+                        </p>
+                        <form class="card__top-hover-down-form" action="#">
+                            <input class="card__top-hover-down-form-name" type="text" placeholder="Имя" />
+                            <input
+                                class="card__top-hover-down-form-email"
+                                type="email"
+                                placeholder="Электронная почта" />
+                            <input class="card__top-hover-down-button" type="button" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+                <div class="card__top-slides">
+                    <div class="card__top-slides-item card__top-slides-item--active"></div>
+                    <div class="card__top-slides-item"></div>
+                    <div class="card__top-slides-item"></div>
+                    <div class="card__top-slides-item"></div>
+                    <div class="card__top-slides-item"></div>
+                </div>
+                <div class="card__top-extra">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="card__bottom">
+                <div class="card__bottom-availability">В наличии</div>
+                <div class="card__bottom-title">Oversized<br />rib-knit jumper</div>
+                <div class="card__bottom-purchase">
+                    <div class="card__bottom-purchase-prices">
+                        <span class="card__bottom-purchase-prices-new">890 ₽</span>
+                        <span class="card__bottom-purchase-prices-old">1 990 ₽</span>
+                    </div>
+                    <button class="card__bottom-purchase-cart"></button>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
